@@ -15,27 +15,40 @@
 </head>
 
 <body>
+    <div id="modal" class="modal">
+        <div class="conteudo_modal">
+            <header class="header_modal">
+                <h2>Email cadastrado com sucesso!</h2>
+                <p class="fechar">&times;</p>
+            </header>
+            
+        </div>
+    </div>
     <header>
         <img src="./assets/images/logo.png" alt="Insert Coin Logo"
             title="Insert Coin Logo">
     </header>
+
+
     <main>
         <section class="section-container background">
-            
             <div class="form-container">
                 <p>Inscreva-se e receba as ofertas antes de todo mundo!!!</p>
-                <form action="#" method="POST">
-                    <input type="text" name="nome" placeholder="Seu nome">
-                    <input type="email" name="email" placeholder="Seu email">
+                <form id="form_cadastro" action="#" method="POST">
+                    <input type="text" id="nome" name="nome"
+                        placeholder="Seu nome">
+                    <input type="email" id="email" name="email"
+                        placeholder="Seu email">
                     <input type="submit" value="Inscreva-se">
                 </form>
             </div>
         </section>
-        
+
     </main>
     <footer>
         <p>Criado por Alexandre Moreira para o Hiring Coders.</p>
     </footer>
 </body>
 <script src="scripts/script.js"></script>
+
 </html>
