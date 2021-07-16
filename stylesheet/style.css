@@ -1,4 +1,3 @@
-/* reset */
 * {
   padding:0;
   margin:0;
@@ -14,8 +13,6 @@
 body{
     background-color: #000;
     background-image: url('../assets/images/bg.jpg');
-    height: 100vh;
-    width:100%;
     background-attachment: fixed;
     background-size: contain;
     background-repeat: no-repeat; 
@@ -31,7 +28,7 @@ header{
 }
 
 .section-container{
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   justify-content: right;
@@ -105,10 +102,8 @@ input[type=submit]:hover{
   
 }
 
-.header_modal {
-  background-color: inherit;
+.conteudo_modal h2 {
   color: #fff;
-  height: auto;
 }
 
 .fechar {
@@ -129,10 +124,22 @@ input[type=submit]:hover{
 }
 
 footer{
-  height: 20px;
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   background-color: #000;
   color: #fff;
 }
-  
+
+footer a {
+  text-decoration: none;
+  color: rgb(10, 185, 171);
+}
+footer a:hover {
+  color: red;
+}
+footer a:visited {
+  color:skyblue;
+}
