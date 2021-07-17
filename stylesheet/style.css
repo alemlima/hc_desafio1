@@ -12,68 +12,10 @@
 
 body{
     background-color: #000;
-    background-image: url('../assets/images/bg.jpg');
-    background-attachment: fixed;
-    background-size: contain;
-    background-repeat: no-repeat; 
+    height: 100vh;
+    font-family: 'Fredoka One', cursive, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header{
-  display: flex;
-  height: 10vh;
-  width: 100%;
-  justify-content: center;
-  padding-bottom: 5px;
-  background-color: #000;
-}
-
-.section-container{
-  height: 80vh;
-  width: 100%;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.form-container{
-  background: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  max-width: 300px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  }
-
-input{
-  width: 100%;
-  height: 25px;
-  margin: 5px;
-  text-align: center;
-  border-radius: 15px;
-  background: #000;
-  color: rgb(10, 185, 171);
-  font-weight: bolder;
-}
-input:focus{
-  outline: 2px solid rgb(10, 185, 171);
-}
-
-input[type=submit]{
-  background:rgb(10, 185, 171);
-  color: #000;
-  outline: 2px solid #000
-}
-
-input[type=submit]:hover{
-  opacity: 0.8;
-}
-
-.form-container p{
-  color:rgb(10, 185, 171);
-  text-align: center;
-  font-weight: bolder;
-}
 .modal {
   display: none; 
   position: fixed;
@@ -113,7 +55,6 @@ input[type=submit]:hover{
   color: #fff;
   font-size: 60px;
   font-weight: bold;
-  
 }
 
 .fechar:hover,
@@ -123,23 +64,138 @@ input[type=submit]:hover{
   cursor: pointer;
 }
 
+.menu{
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  background-image: url('../assets/images/bg.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  background-attachment: scroll;
+  background-size: contain;
+  min-height: 60vh;
+  align-items: center;
+  gap: 5rem;
+}
+
+.chamada{
+  color:#fff;
+  text-align: center;
+  
+}
+
+.nome_loja{
+  color: rgb(10, 185, 171);
+}
+
+.form-container{
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  }
+
+input{
+  width: 100%;
+  height: 25px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 15px;
+  background: #000;
+  color: rgb(10, 185, 171);
+  font-weight: bolder;
+}
+
+input:focus{
+  outline: 2px solid rgb(10, 185, 171);
+}
+
+input[type=submit]{
+  background:rgb(10, 185, 171);
+  color: #000;
+  outline: 2px solid #000
+}
+
+input[type=submit]:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.form-container p{
+  color:rgb(10, 185, 171);
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: #000 1px 1px;
+}
+
+.produtos-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem 3rem;
+  align-items: center;
+  margin: 3rem 0 3rem 0;
+}
+
+.oferta{
+  background-color: rgb(10, 185, 171);
+  border-radius: 5px;
+  margin: 2px;
+  max-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem 15rem;
+  color: #fff;
+  text-shadow: #000 1px 1px;
+  padding-bottom: 5px;
+}
+
+.oferta img{
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.oferta:hover{
+  transform: scale(1.1);
+}
+.off {
+  color:red;
+  font-weight: bold;
+  text-shadow: #000 1px 2px;
+}
+
 footer{
   display: flex;
   height: 10vh;
   width: 100%;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: #000;
   color: #fff;
+  
 }
 
 footer a {
   text-decoration: none;
   color: rgb(10, 185, 171);
 }
+
 footer a:hover {
   color: red;
 }
+
 footer a:visited {
   color:skyblue;
 }

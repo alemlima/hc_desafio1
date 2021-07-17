@@ -11,6 +11,11 @@
 
     <link rel="stylesheet" href="./stylesheet/style.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -21,23 +26,51 @@
         </div>
     </div>
     <header>
-        <img src="./assets/images/logo.png" alt="Insert Coin Logo"
-            title="Insert Coin Logo">
+        <nav class="menu">
+            <img src="./assets/images/logo.png" alt="Insert Coin Logo"
+                title="Insert Coin Logo">
+        </nav>
     </header>
     <main>
-        <section class="section-container">
-            <div class="form-container">
-                <p>Inscreva-se e receba as ofertas antes de todo mundo!!!</p>
-                <form id="form_cadastro" action="#" method="POST">
-                    <input type="text" id="nome" name="nome"
-                        placeholder="Seu nome">
-                    <input type="email" id="email" name="email"
-                        placeholder="Seu email">
-                    <input type="submit" value="Inscreva-se">
-                </form>
+        <div class="main-container">
+            <div class="chamada">
+                <p>A melhor Black Friday gamer do Brasil,<br> só aqui na <span
+                        class="nome_loja">Insert Coin Games!</span></p>
             </div>
-        </section>
-
+            <aside>
+                <div class="form-container">
+                    <p>Inscreva-se e receba as ofertas antes de todo mundo!!!
+                    </p>
+                    <form id="form_cadastro">
+                        <input type="text" id="nome" name="nome"
+                            placeholder="Seu nome" required>
+                        <input type="email" id="email" name="email"
+                            placeholder="Seu email" required>
+                        <input type="submit" value="Inscreva-se">
+                    </form>
+                </div>
+            </aside>
+        </div>
+        <div class="produtos-container">
+            <div class="oferta">
+                <img src="./assets/images/ps5.jpeg" alt="Imagem PS5"
+                    title="Playstation 5">
+                <h3>PS5</h3>
+                <p>Até<span class="off"> 30% OFF!</span></p>
+            </div>
+            <div class="oferta">
+                <img src="./assets/images/xbox.jpeg"
+                    alt="Imagem Xbox - Series X" title="Xbox - Series X">
+                <h3>Xbox - Series X</h3>
+                <p>Até <span class="off">35% OFF!</span></p>
+            </div>
+            <div class="oferta">
+                <img src="./assets/images/switch.jpeg"
+                    alt="Imagem Nintendo Switch" title="Nintendo Switch">
+                <h3>Nintendo Switch</h3>
+                <p>Até <span class="off">25% OFF!</span></p>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Criado por <a href="https://github.com/alemlima">Alexandre
